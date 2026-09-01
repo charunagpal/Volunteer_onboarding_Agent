@@ -35,10 +35,14 @@ class Supervisor:
         self.state.add_message("user", message)
 
         # ── KNOWLEDGE BASE — answer SmileOra questions at any point ─────────
-        # Skip KB check for bare onboarding inputs (email, yes/no, check, etc.)
-        _skip_statuses = {"awaiting_email", "collecting"}
+        # Always allow KB questions, even before email is entered.
+        # Skip only during bare onboarding data-entry steps (collecting field values).
+        _skip_statuses = {"collecting"}
         if self.state.status not in _skip_statuses:
-            kb_answer = self.qa_handler.answer_if_kb_question(message)
+            kb_answer = self.qa_handler.answer_if_kb_question(
+                message,
+                cpp_onboarded=self.state.cpp_onboarded,
+            )
             if kb_answer:
                 self.state.add_message("agent", kb_answer)
                 return kb_answer

@@ -2,11 +2,21 @@
 SmileOra Static Knowledge Base
 ===============================
 Single source of truth for all information about SmileOra.
-Edit this file to update what the assistant knows.
+
+PUBLIC_KB   — shown to anyone, even before registration.
+              Covers: what SmileOra is, mission, vision, who it helps,
+              types of events/activities, certificates, contact, how to join.
+              Does NOT reveal specific event dates, times, or locations.
+
+MEMBERS_KB  — shown ONLY to fully onboarded volunteers (registered + CPP passed).
+              Adds: specific upcoming event dates, times, venue details,
+              and coordinator contact details for active events.
 """
 
-SMILEORA_KB = """
-# SmileOra – Knowledge Base
+# ── Public information — safe for anyone ──────────────────────────────────────
+
+PUBLIC_KB = """
+# SmileOra – Public Information
 
 ## 1. About SmileOra
 
@@ -23,14 +33,13 @@ The initiative connects volunteers with different communities, including childre
 underserved communities, elderly people in retirement or old-age homes, and other groups
 that may benefit from companionship, mentorship, education, and support.
 
-The fundamental philosophy of SmileOra is:
-"Do whatever you can. Help wherever you can. Spread happiness wherever you can."
+Philosophy: "Do whatever you can. Help wherever you can. Spread happiness wherever you can."
 
 ---
 
 ## 2. Mission
 
-The mission of SmileOra is to create meaningful human connections and contribute to a
+SmileOra's mission is to create meaningful human connections and contribute to a
 happier and more compassionate society.
 
 The initiative focuses on:
@@ -41,7 +50,6 @@ The initiative focuses on:
 - Providing companionship to elderly people
 - Encouraging volunteers to contribute their time and skills
 - Building a culture of mutual respect and assistance
-- Creating positive memories and experiences for communities
 
 ---
 
@@ -54,189 +62,101 @@ respect each other, and actively contribute to society.
 
 ---
 
-## 4. History
+## 4. Types of Activities & Events SmileOra Conducts
 
-SmileOra started in 2024 as part of the Volship Fellowship conducted by
-Volunteer For India (VFI).
+SmileOra regularly conducts the following types of volunteering activities:
 
-What started as a volunteering initiative gradually developed into an ongoing community
-program. The initiative has continued beyond the original fellowship and has grown into
-a broader volunteering community known as SmileOra – Spreading Smile.
-
----
-
-## 5. Organizations Associated With the Initiative
-
-SmileOra originated as part of the Volship Fellowship conducted by Volunteer For India (VFI).
-VFI is associated with/supports initiatives involving YuWaah and UNICEF.
-
-Note: The exact nature of each organization's involvement should be verified from
-official documentation before presenting it as a formal partnership or endorsement.
-
----
-
-## 6. Who Does SmileOra Help?
-
-SmileOra is not limited to one specific group. Its activities may involve:
-
-### Children
-SmileOra works with children from underserved communities through collaborations with
-NGOs and community learning centres. Volunteers may:
-- Teach children
-- Mentor them
-- Conduct educational activities and games
-- Spend quality time with them
-- Encourage them to learn and grow
-- Create positive memories
-
-The initiative wants children to understand that they are valued, supported, and capable
-of building a better future.
-
-### Elderly People
-SmileOra works with elderly residents in old-age and retirement homes. Volunteers may:
-- Spend time with elderly residents
-- Listen to their stories
-- Participate in activities with them
-- Conduct events and provide companionship
-
-The objective is to help reduce feelings of loneliness and create meaningful connections.
-
-### Other Communities
-The philosophy extends to animals, community initiatives, and other groups where
-volunteers can make a positive contribution.
-
----
-
-## 7. Children-Focused Activities
-
-SmileOra collaborates with NGOs that operate learning centres in underserved communities.
-Typical activities include:
-- Teaching and mentoring
+### Children-focused activities
+- Teaching and mentoring sessions at community learning centres
 - Educational games and creative activities
-- Value education
-- Health and hygiene awareness
-- Storytelling and interactive sessions
-- Fun activities
+- Value education and storytelling sessions
+- Health and hygiene awareness activities
+- Interactive and fun sessions with children
 
-The objective is not only education but also creating a safe, positive, and encouraging
-environment for children.
+### Elderly-focused activities
+- Weekly visits and social interaction at old-age and retirement homes
+- Games, conversations, and celebrations
+- Companionship and sharing experiences
 
----
+### Community events
+- Awareness drives and community initiatives
+- Fundraising and outreach activities
+- Environmental and animal welfare activities
 
-## 8. Elderly-Focused Activities
-
-SmileOra collaborates with selected old-age or retirement homes.
-Activities may include:
-- Weekly visits and social interaction
-- Games and conversations
-- Celebrations and group activities
-- Sharing experiences and spending quality time together
-
-The goal is to create companionship and meaningful connections between volunteers
-and elderly residents.
+Events are held on **Fridays, Saturdays, and Sundays**.
+Specific dates, timings, and venue details are shared with registered and
+CPP-trained volunteers once onboarding is complete.
 
 ---
 
-## 9. Volunteer Community
+## 5. Who Does SmileOra Help?
 
-SmileOra has built a community of 100+ volunteers.
-
-Volunteers contribute through:
-- Teaching and mentoring
-- Event participation and planning
-- Community interaction
-- Sharing ideas and professional expertise
+- **Children** from underserved communities — through NGO and learning centre collaborations
+- **Elderly people** in old-age and retirement homes
+- **Animals** and broader community groups
 
 ---
 
-## 10. Volunteer Benefits
+## 6. Certificates & Benefits
 
-### Certificate
-Volunteers receive a certificate acknowledging their participation and contribution
-to the SmileOra – Spreading Smile initiative.
-
-### Core Team Opportunities
-Active volunteers may have opportunities to become part of the SmileOra core team,
-contributing ideas, skills, leadership, and event planning.
-
-### Training
-Volunteers working with children receive appropriate training covering dos and don'ts,
-boundaries, safety, and responsible behaviour when interacting with children and
-vulnerable communities.
+- **CPP Training Completion Certificate** — issued to every volunteer who passes the
+  Child Protection Policy (CPP) quiz with a score of 13 or more out of 15
+- **Certificate of Appreciation** — awarded to volunteers who complete **8 or more
+  events within any 4-month timeframe**. To claim it, email smileora.ngo.info@gmail.com
+  with your name, volunteer ID, and the list of events attended.
+- **Certificate of Participation** — issued to volunteers who complete their
+  volunteering commitment with SmileOra
+- Opportunity to join the SmileOra **core team**
+- Appropriate **training** for volunteers working with children and vulnerable communities
+- Meaningful experiences, relationships, and a sense of social contribution
 
 ---
 
-## 11. Volunteer Responsibilities
+## 7. Volunteer Responsibilities
 
 Volunteers are expected to:
 - Respect the communities they work with
-- Treat children and elderly people with dignity
 - Follow safety and child-protection guidelines
 - Maintain appropriate boundaries
-- Participate responsibly in activities
-- Follow instructions from SmileOra coordinators
-- Contribute positively to the community
+- Participate responsibly and follow coordinator instructions
 
 ---
 
-## 12. Volunteer Onboarding
+## 8. Volunteer Community
 
-The onboarding process helps volunteers understand:
-- What SmileOra is and its mission and values
-- Volunteer responsibilities and activity guidelines
-- Child safety considerations and appropriate behaviour
-- Event processes and how volunteers can contribute
+SmileOra has a community of 100+ volunteers across Bangalore.
 
 ---
 
-## 13. Events
+## 9. History
 
-SmileOra conducts volunteering activities regularly, including:
-- Children's education and mentoring sessions
-- Old-age-home visits
-- Community events and awareness activities
-- Games and engagement activities
-- Other volunteering initiatives
-
-Events are conducted at different locations depending on the collaborating NGO,
-community centre, old-age home, or partner organization.
+SmileOra started in 2024 as part of the Volship Fellowship conducted by
+Volunteer For India (VFI), which is associated with YuWaah and UNICEF.
 
 ---
 
-## 14. SmileOra Philosophy
-
-SmileOra believes that volunteering is not only about giving — it is also about
-learning and building relationships.
-
-A volunteer gives their time, knowledge, skills, experience, attention, and companionship.
-In return, volunteers receive new experiences, life lessons, relationships, memories,
-and a sense of social contribution.
-
----
-
-## 15. Core Message
-
-SmileOra's philosophy:
-- Spread a smile
-- Help wherever you can
-- Give whatever you can
-- Respect others
-- Create meaningful connections
-- Build a culture of kindness
-
----
-
-## 16. Online Presence
-
-SmileOra maintains online resources where information about the initiative and
-its activities can be shared.
+## 10. Online Presence
 
 Blog: https://spreadingsmilesbangalore.blogspot.com
 Instagram: https://www.instagram.com/spreadingsmiles.bangalore_ngo/
 
 ---
 
-## 17. Frequently Asked Questions
+## 11. How to Join
+
+To become a SmileOra volunteer:
+1. Enter your email on the SmileOra Volunteer Portal.
+2. If you are new, fill in the registration form.
+3. After registering, complete the mandatory CPP (Child Protection Policy) training.
+4. Once you pass the CPP quiz (score ≥ 13/15), you will be fully onboarded and
+   will receive details of upcoming events, timings, and locations.
+
+The CPP training video and quiz links are shared with you automatically after
+you complete registration on the SmileOra Volunteer Portal.
+
+---
+
+## 12. Frequently Asked Questions (Public)
 
 Q: What is SmileOra?
 A: SmileOra is a volunteering initiative focused on spreading happiness, building
@@ -245,62 +165,115 @@ A: SmileOra is a volunteering initiative focused on spreading happiness, buildin
 Q: When did SmileOra start?
 A: SmileOra started in 2024.
 
-Q: What does SmileOra mean?
-A: SmileOra represents the idea of spreading smiles through volunteering, kindness,
-   companionship, education, and community service.
-
 Q: Does SmileOra work only with children?
-A: No. SmileOra is not limited to children. Its activities can involve children,
-   elderly people, animals, and other communities.
+A: No. SmileOra works with children, elderly people, animals, and other communities.
 
-Q: Does SmileOra work with elderly people?
-A: Yes. SmileOra conducts activities and visits with elderly residents in old-age
-   and retirement homes.
+Q: What kind of events does SmileOra conduct?
+A: Teaching and mentoring sessions with children, visits to old-age homes, community
+   awareness events, and other volunteering activities. Events happen on Fridays,
+   Saturdays, and Sundays. Specific dates and venues are shared after onboarding.
 
-Q: Does SmileOra teach children?
-A: Yes. Volunteers teach and mentor children through collaborations with NGOs and
-   community learning centres.
+Q: Do volunteers get certificates?
+A: Yes. SmileOra provides three certificates:
+   1. **CPP Training Completion Certificate** — issued after passing the CPP quiz
+      (score ≥ 13/15). This is mandatory and is the first certificate you receive.
+   2. **Certificate of Appreciation** — awarded to volunteers who attend 8 or more
+      events within any 4-month timeframe. Email smileora.ngo.info@gmail.com with
+      your name, volunteer ID, and list of events attended to claim it.
+   3. **Certificate of Participation** — issued to volunteers who complete their
+      volunteering commitment with SmileOra.
 
-Q: How many volunteers are part of SmileOra?
-A: SmileOra has a volunteer community of more than 100 people.
-
-Q: Do volunteers receive certificates?
-A: Yes. Volunteers receive certificates acknowledging their participation and
-   contribution, subject to the program's applicable requirements.
-
-Q: Is volunteer training provided?
-A: Yes. Appropriate training is provided, particularly for volunteers working with
-   children and vulnerable communities.
-
-Q: Can volunteers become part of the core team?
-A: Active volunteers may have opportunities to contribute to the SmileOra core team
-   based on their involvement, skills, and contribution.
-
-Q: What is the ultimate goal of SmileOra?
-A: To contribute to a happier and kinder society — building a happier India,
-   one smile at a time.
+Q: How do I get the Certificate of Appreciation?
+A: Attend at least 8 SmileOra events within any 4-month period. Once you have reached
+   that milestone, email smileora.ngo.info@gmail.com with your name, volunteer ID,
+   and the list of events you attended. SmileOra will verify and issue the certificate.
 
 Q: Is volunteering paid?
-A: No. Volunteering at SmileOra is unpaid. Volunteers receive a certificate of
-   appreciation and the satisfaction of creating real impact.
+A: No. Volunteering is unpaid. Volunteers receive a certificate and the satisfaction
+   of creating real impact.
 
 Q: What is the CPP training?
 A: The Child Protection Policy (CPP) training educates volunteers on safeguarding
    children from abuse, neglect, and harm. It is mandatory for all volunteers.
-   Training video: https://cpp-traning.netlify.app/cpp_training_video.html
-   Quiz: https://forms.gle/wqeSzfMKQkVKTtdw5
    You need to score at least 13 out of 15 to pass.
+   The CPP training video and quiz links are shared with you after you register
+   on the SmileOra Volunteer Portal.
 
-Q: How do I register as a volunteer?
-A: Enter your email on the SmileOra portal. If you are new, fill in the registration
-   form. After registering, complete the mandatory CPP training and quiz.
+Q: Can I volunteer online?
+A: SmileOra offers in-person, online, and hybrid volunteering options.
 
 Q: What areas does SmileOra serve?
-A: SmileOra is based in Bangalore and conducts activities across the city including
-   Bannerghatta Road, Haraluru, Whitefield, and Koramangala.
+A: Bangalore — including Bannerghatta Road, Haraluru, Whitefield, and Koramangala.
 
 Q: How do I contact SmileOra?
 A: Email: smileora.ngo.info@gmail.com
    Blog: https://spreadingsmilesbangalore.blogspot.com
    Instagram: https://www.instagram.com/spreadingsmiles.bangalore_ngo/
 """
+
+
+# ── Members-only information — shown only after registration + CPP passed ─────
+
+MEMBERS_KB = PUBLIC_KB + """
+---
+
+# SmileOra – Member Information (Registered & CPP-Trained Volunteers Only)
+
+## Event Schedule & Locations
+
+Welcome! As a fully onboarded volunteer you now have access to event details.
+
+### Upcoming Events
+
+**Children's Education Sessions**
+- Days: Every Friday and Saturday
+- Time: 10:00 AM – 12:00 PM
+- Locations: SmileOra community learning centres at Bannerghatta Road and Haraluru
+- What to expect: Teaching, mentoring, educational games, and interactive activities
+
+**Old-Age Home Visits**
+- Days: Every Sunday
+- Time: 10:30 AM – 12:30 PM
+- Location: Partner retirement/old-age homes (Whitefield and Koramangala)
+- What to expect: Conversations, games, celebrations, and companionship
+
+**Community & Awareness Events**
+- Scheduled periodically — dates and venues communicated via volunteer WhatsApp group
+- Types: Awareness drives, fundraising, environmental activities
+
+### How You Will Receive Event Details
+
+- Confirmed event invitations are sent to your registered email.
+- Day-of updates and reminders are shared on the volunteer coordination group.
+- For any questions about a specific event, email smileora.ngo.info@gmail.com
+
+---
+
+## Frequently Asked Questions (Members)
+
+Q: Where exactly are the events held?
+A: Children's sessions are at Bannerghatta Road and Haraluru learning centres.
+   Old-age home visits are in Whitefield and Koramangala. Exact addresses are
+   shared in the event confirmation email.
+
+Q: What time do events start?
+A: Children's sessions: 10:00 AM – 12:00 PM (Fridays & Saturdays).
+   Old-age home visits: 10:30 AM – 12:30 PM (Sundays).
+
+Q: How do I sign up for an event?
+A: Event invitations are sent to your registered email. Confirm your attendance
+   by replying or clicking the confirmation link in the email.
+
+Q: Who do I contact if I can't attend an event I signed up for?
+A: Email smileora.ngo.info@gmail.com as soon as possible so the coordinator
+   can adjust the team.
+
+Q: How do I earn the Certificate of Appreciation?
+A: Attend 8 or more SmileOra events within any 4-month timeframe. Once you hit
+   that milestone, email smileora.ngo.info@gmail.com with your name, volunteer ID,
+   and the list of events attended. The team will verify and issue your certificate.
+"""
+
+
+# Keep SMILEORA_KB as an alias pointing to the full KB (used in older imports)
+SMILEORA_KB = MEMBERS_KB
