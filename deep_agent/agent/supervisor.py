@@ -36,9 +36,11 @@ class Supervisor:
 
         # ── KNOWLEDGE BASE — answer SmileOra questions at any point ─────────
         # Always allow KB questions, even before email is entered.
-        # Skip only during bare onboarding data-entry steps (collecting field values).
+        # Skip only during bare onboarding data-entry steps (collecting field values),
+        # and skip entirely when the message is a special bypass code.
         _skip_statuses = {"collecting"}
-        if self.state.status not in _skip_statuses:
+        _is_bypass_code = message.strip().upper() == "VOLCPPCOMP"
+        if self.state.status not in _skip_statuses and not _is_bypass_code:
             kb_answer = self.qa_handler.answer_if_kb_question(
                 message,
                 cpp_onboarded=self.state.cpp_onboarded,
@@ -123,6 +125,24 @@ class Supervisor:
                 return reply
 
         # Handle CPP re-check (user typed 'check' after retaking quiz)
+        if self.state.status in ("cpp_pending", "done"):
+            # ── Legacy-volunteer bypass code ─────────────────────────────────
+            if message.strip().upper() == "VOLCPPCOMP":
+                email = self.state.volunteer_data.get("email", "")
+                self.state.status        = "done"
+                self.state.cpp_onboarded = True
+                self.login_handler.complete_cpp(email)
+                name = self.state.volunteer_data.get("preferred_name") or \
+                       self.state.volunteer_data.get("full_name", "Volunteer")
+                reply = (
+                    f"✅ CPP training marked as complete for {name}.\n\n"
+                    f"You are now fully onboarded with SmileOra! 🎉\n"
+                    f"Our team will reach out with your first assignment.\n"
+                    f"If you have questions, reach us at smileora.ngo.info@gmail.com"
+                )
+                self.state.add_message("agent", reply)
+                return reply
+
         if self.state.status == "cpp_pending":
             if message.strip().lower() in ("check", "cpp completed", "completed", "done", "yes"):
                 email        = self.state.volunteer_data.get("email", "")
